@@ -1,0 +1,15 @@
+# Python bytecode files
+*.pyc
+__pycache__/
+
+# Virtual environment directories
+venv/
+*.venv/
+*.virtualenv/
+.env/
+
+# Jupyter notebook files
+.ipynb_checkpoints/
+
+# Pytest
+.pytest_cache/

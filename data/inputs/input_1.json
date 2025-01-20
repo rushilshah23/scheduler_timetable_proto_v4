@@ -1,0 +1,3187 @@
+{
+    "university_name": "Global Tech University",
+    "logo": "https://example.com/logo.png",
+    "divisions": [
+        {
+            "divisionName": "CO1A"
+        },
+        {
+            "divisionName": "CO1B"
+        },
+        {
+            "divisionName": "CO1C"
+        },
+        {
+            "divisionName": "CO1D"
+        },
+        {
+            "divisionName": "CO2A"
+        },
+        {
+            "divisionName": "CO2B"
+        },
+        {
+            "divisionName": "CO2C"
+        },
+        {
+            "divisionName": "CO2D"
+        },
+        {
+            "divisionName": "CO3A"
+        },
+        {
+            "divisionName": "CO3B"
+        },
+        {
+            "divisionName": "CO3C"
+        },
+        {
+            "divisionName": "CO3D"
+        },
+        {
+            "divisionName": "CO4A"
+        },
+        {
+            "divisionName": "CO4B"
+        },
+        {
+            "divisionName": "CO4C"
+        },
+        {
+            "divisionName": "CO4D"
+        },
+        {
+            "divisionName": "EL1A"
+        },
+        {
+            "divisionName": "EL1B"
+        },
+        {
+            "divisionName": "EL1C"
+        },
+        {
+            "divisionName": "EL1D"
+        },
+        {
+            "divisionName": "EL2A"
+        },
+        {
+            "divisionName": "EL2B"
+        },
+        {
+            "divisionName": "EL2C"
+        },
+        {
+            "divisionName": "EL2D"
+        },
+        {
+            "divisionName": "EL3A"
+        },
+        {
+            "divisionName": "EL3B"
+        },
+        {
+            "divisionName": "EL3C"
+        },
+        {
+            "divisionName": "EL3D"
+        },
+        {
+            "divisionName": "EL4A"
+        },
+        {
+            "divisionName": "EL4B"
+        },
+        {
+            "divisionName": "EL4C"
+        },
+        {
+            "divisionName": "EL4D"
+        },
+        {
+            "divisionName": "ME1A"
+        },
+        {
+            "divisionName": "ME1B"
+        },
+        {
+            "divisionName": "ME1C"
+        },
+        {
+            "divisionName": "ME1D"
+        },
+        {
+            "divisionName": "ME2A"
+        },
+        {
+            "divisionName": "ME2B"
+        },
+        {
+            "divisionName": "ME2C"
+        },
+        {
+            "divisionName": "ME2D"
+        },
+        {
+            "divisionName": "ME3A"
+        },
+        {
+            "divisionName": "ME3B"
+        },
+        {
+            "divisionName": "ME3C"
+        },
+        {
+            "divisionName": "ME3D"
+        },
+        {
+            "divisionName": "ME4A"
+        },
+        {
+            "divisionName": "ME4B"
+        },
+        {
+            "divisionName": "ME4C"
+        },
+        {
+            "divisionName": "ME4D"
+        },
+        {
+            "divisionName": "CI1A"
+        },
+        {
+            "divisionName": "CI1B"
+        },
+        {
+            "divisionName": "CI1C"
+        },
+        {
+            "divisionName": "CI1D"
+        },
+        {
+            "divisionName": "CI2A"
+        },
+        {
+            "divisionName": "CI2B"
+        },
+        {
+            "divisionName": "CI2C"
+        },
+        {
+            "divisionName": "CI2D"
+        },
+        {
+            "divisionName": "CI3A"
+        },
+        {
+            "divisionName": "CI3B"
+        },
+        {
+            "divisionName": "CI3C"
+        },
+        {
+            "divisionName": "CI3D"
+        },
+        {
+            "divisionName": "CI4A"
+        },
+        {
+            "divisionName": "CI4B"
+        },
+        {
+            "divisionName": "CI4C"
+        },
+        {
+            "divisionName": "CI4D"
+        }
+    ],
+    "workingDays": [
+        {
+            "divisionName": "CO1A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO1B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO1C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO1D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO2A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO2B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO2C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO2D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO3A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO3B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO3C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO3D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO4A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO4B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO4C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CO4D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL1A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL1B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL1C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL1D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL2A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL2B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL2C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL2D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL3A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL3B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL3C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL3D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL4A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL4B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL4C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "EL4D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME1A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME1B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME1C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME1D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME2A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME2B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME2C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME2D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME3A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME3B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME3C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME3D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME4A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME4B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME4C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "ME4D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI1A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI1B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI1C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI1D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI2A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI2B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI2C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI2D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI3A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI3B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI3C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI3D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI4A",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI4B",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI4C",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        },
+        {
+            "divisionName": "CI4D",
+            "schedule": [
+                {
+                    "dayName": "Monday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Tuesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Wednesday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Thursday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                },
+                {
+                    "dayName": "Friday",
+                    "startTime": "09:00am",
+                    "endTime": "05:00pm",
+                    "slotSize": 60
+                }
+            ]
+        }
+    ],
+    "subjects": [
+        {
+            "subjectName": "Subject 1"
+        },
+        {
+            "subjectName": "Subject 2"
+        },
+        {
+            "subjectName": "Subject 3"
+        },
+        {
+            "subjectName": "Subject 4"
+        },
+        {
+            "subjectName": "Subject 5"
+        },
+        {
+            "subjectName": "Subject 6"
+        },
+        {
+            "subjectName": "Subject 7"
+        },
+        {
+            "subjectName": "Subject 8"
+        },
+        {
+            "subjectName": "Subject 9"
+        },
+        {
+            "subjectName": "Subject 10"
+        },
+        {
+            "subjectName": "Subject 11"
+        },
+        {
+            "subjectName": "Subject 12"
+        },
+        {
+            "subjectName": "Subject 13"
+        },
+        {
+            "subjectName": "Subject 14"
+        },
+        {
+            "subjectName": "Subject 15"
+        },
+        {
+            "subjectName": "Subject 16"
+        },
+        {
+            "subjectName": "Subject 17"
+        },
+        {
+            "subjectName": "Subject 18"
+        },
+        {
+            "subjectName": "Subject 19"
+        },
+        {
+            "subjectName": "Subject 20"
+        },
+        {
+            "subjectName": "Subject 21"
+        },
+        {
+            "subjectName": "Subject 22"
+        },
+        {
+            "subjectName": "Subject 23"
+        },
+        {
+            "subjectName": "Subject 24"
+        },
+        {
+            "subjectName": "Subject 25"
+        },
+        {
+            "subjectName": "Subject 26"
+        },
+        {
+            "subjectName": "Subject 27"
+        },
+        {
+            "subjectName": "Subject 28"
+        },
+        {
+            "subjectName": "Subject 29"
+        },
+        {
+            "subjectName": "Subject 30"
+        },
+        {
+            "subjectName": "Subject 31"
+        },
+        {
+            "subjectName": "Subject 32"
+        },
+        {
+            "subjectName": "Subject 33"
+        },
+        {
+            "subjectName": "Subject 34"
+        },
+        {
+            "subjectName": "Subject 35"
+        },
+        {
+            "subjectName": "Subject 36"
+        },
+        {
+            "subjectName": "Subject 37"
+        },
+        {
+            "subjectName": "Subject 38"
+        },
+        {
+            "subjectName": "Subject 39"
+        },
+        {
+            "subjectName": "Subject 40"
+        },
+        {
+            "subjectName": "Subject 41"
+        },
+        {
+            "subjectName": "Subject 42"
+        },
+        {
+            "subjectName": "Subject 43"
+        },
+        {
+            "subjectName": "Subject 44"
+        },
+        {
+            "subjectName": "Subject 45"
+        },
+        {
+            "subjectName": "Subject 46"
+        },
+        {
+            "subjectName": "Subject 47"
+        },
+        {
+            "subjectName": "Subject 48"
+        },
+        {
+            "subjectName": "Subject 49"
+        },
+        {
+            "subjectName": "Subject 50"
+        },
+        {
+            "subjectName": "Subject 51"
+        },
+        {
+            "subjectName": "Subject 52"
+        },
+        {
+            "subjectName": "Subject 53"
+        },
+        {
+            "subjectName": "Subject 54"
+        },
+        {
+            "subjectName": "Subject 55"
+        },
+        {
+            "subjectName": "Subject 56"
+        },
+        {
+            "subjectName": "Subject 57"
+        },
+        {
+            "subjectName": "Subject 58"
+        },
+        {
+            "subjectName": "Subject 59"
+        },
+        {
+            "subjectName": "Subject 60"
+        },
+        {
+            "subjectName": "Subject 61"
+        },
+        {
+            "subjectName": "Subject 62"
+        },
+        {
+            "subjectName": "Subject 63"
+        },
+        {
+            "subjectName": "Subject 64"
+        },
+        {
+            "subjectName": "Subject 65"
+        },
+        {
+            "subjectName": "Subject 66"
+        },
+        {
+            "subjectName": "Subject 67"
+        },
+        {
+            "subjectName": "Subject 68"
+        },
+        {
+            "subjectName": "Subject 69"
+        },
+        {
+            "subjectName": "Subject 70"
+        },
+        {
+            "subjectName": "Subject 71"
+        },
+        {
+            "subjectName": "Subject 72"
+        },
+        {
+            "subjectName": "Subject 73"
+        },
+        {
+            "subjectName": "Subject 74"
+        },
+        {
+            "subjectName": "Subject 75"
+        },
+        {
+            "subjectName": "Subject 76"
+        },
+        {
+            "subjectName": "Subject 77"
+        },
+        {
+            "subjectName": "Subject 78"
+        },
+        {
+            "subjectName": "Subject 79"
+        },
+        {
+            "subjectName": "Subject 80"
+        },
+        {
+            "subjectName": "Subject 81"
+        },
+        {
+            "subjectName": "Subject 82"
+        },
+        {
+            "subjectName": "Subject 83"
+        },
+        {
+            "subjectName": "Subject 84"
+        },
+        {
+            "subjectName": "Subject 85"
+        },
+        {
+            "subjectName": "Subject 86"
+        },
+        {
+            "subjectName": "Subject 87"
+        },
+        {
+            "subjectName": "Subject 88"
+        },
+        {
+            "subjectName": "Subject 89"
+        },
+        {
+            "subjectName": "Subject 90"
+        },
+        {
+            "subjectName": "Subject 91"
+        },
+        {
+            "subjectName": "Subject 92"
+        },
+        {
+            "subjectName": "Subject 93"
+        },
+        {
+            "subjectName": "Subject 94"
+        },
+        {
+            "subjectName": "Subject 95"
+        },
+        {
+            "subjectName": "Subject 96"
+        },
+        {
+            "subjectName": "Subject 97"
+        },
+        {
+            "subjectName": "Subject 98"
+        },
+        {
+            "subjectName": "Subject 99"
+        },
+        {
+            "subjectName": "Subject 100"
+        }
+    ],
+    "faculties": [
+        {
+            "facultyName": "Faculty 1"
+        },
+        {
+            "facultyName": "Faculty 2"
+        },
+        {
+            "facultyName": "Faculty 3"
+        },
+        {
+            "facultyName": "Faculty 4"
+        },
+        {
+            "facultyName": "Faculty 5"
+        },
+        {
+            "facultyName": "Faculty 6"
+        },
+        {
+            "facultyName": "Faculty 7"
+        },
+        {
+            "facultyName": "Faculty 8"
+        },
+        {
+            "facultyName": "Faculty 9"
+        },
+        {
+            "facultyName": "Faculty 10"
+        },
+        {
+            "facultyName": "Faculty 11"
+        },
+        {
+            "facultyName": "Faculty 12"
+        },
+        {
+            "facultyName": "Faculty 13"
+        },
+        {
+            "facultyName": "Faculty 14"
+        },
+        {
+            "facultyName": "Faculty 15"
+        },
+        {
+            "facultyName": "Faculty 16"
+        },
+        {
+            "facultyName": "Faculty 17"
+        },
+        {
+            "facultyName": "Faculty 18"
+        },
+        {
+            "facultyName": "Faculty 19"
+        },
+        {
+            "facultyName": "Faculty 20"
+        },
+        {
+            "facultyName": "Faculty 21"
+        },
+        {
+            "facultyName": "Faculty 22"
+        },
+        {
+            "facultyName": "Faculty 23"
+        },
+        {
+            "facultyName": "Faculty 24"
+        },
+        {
+            "facultyName": "Faculty 25"
+        },
+        {
+            "facultyName": "Faculty 26"
+        },
+        {
+            "facultyName": "Faculty 27"
+        },
+        {
+            "facultyName": "Faculty 28"
+        },
+        {
+            "facultyName": "Faculty 29"
+        },
+        {
+            "facultyName": "Faculty 30"
+        },
+        {
+            "facultyName": "Faculty 31"
+        },
+        {
+            "facultyName": "Faculty 32"
+        },
+        {
+            "facultyName": "Faculty 33"
+        },
+        {
+            "facultyName": "Faculty 34"
+        },
+        {
+            "facultyName": "Faculty 35"
+        },
+        {
+            "facultyName": "Faculty 36"
+        },
+        {
+            "facultyName": "Faculty 37"
+        },
+        {
+            "facultyName": "Faculty 38"
+        },
+        {
+            "facultyName": "Faculty 39"
+        },
+        {
+            "facultyName": "Faculty 40"
+        },
+        {
+            "facultyName": "Faculty 41"
+        },
+        {
+            "facultyName": "Faculty 42"
+        },
+        {
+            "facultyName": "Faculty 43"
+        },
+        {
+            "facultyName": "Faculty 44"
+        },
+        {
+            "facultyName": "Faculty 45"
+        },
+        {
+            "facultyName": "Faculty 46"
+        },
+        {
+            "facultyName": "Faculty 47"
+        },
+        {
+            "facultyName": "Faculty 48"
+        },
+        {
+            "facultyName": "Faculty 49"
+        },
+        {
+            "facultyName": "Faculty 50"
+        },
+        {
+            "facultyName": "Faculty 51"
+        },
+        {
+            "facultyName": "Faculty 52"
+        },
+        {
+            "facultyName": "Faculty 53"
+        },
+        {
+            "facultyName": "Faculty 54"
+        },
+        {
+            "facultyName": "Faculty 55"
+        },
+        {
+            "facultyName": "Faculty 56"
+        },
+        {
+            "facultyName": "Faculty 57"
+        },
+        {
+            "facultyName": "Faculty 58"
+        },
+        {
+            "facultyName": "Faculty 59"
+        },
+        {
+            "facultyName": "Faculty 60"
+        },
+        {
+            "facultyName": "Faculty 61"
+        },
+        {
+            "facultyName": "Faculty 62"
+        },
+        {
+            "facultyName": "Faculty 63"
+        },
+        {
+            "facultyName": "Faculty 64"
+        },
+        {
+            "facultyName": "Faculty 65"
+        },
+        {
+            "facultyName": "Faculty 66"
+        },
+        {
+            "facultyName": "Faculty 67"
+        },
+        {
+            "facultyName": "Faculty 68"
+        },
+        {
+            "facultyName": "Faculty 69"
+        },
+        {
+            "facultyName": "Faculty 70"
+        }
+    ],
+    "allotables": [
+        {
+            "constraints": [
+                {
+                    "dayName":"monday",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }                    
+                },
+                {
+                    "startTime": "09:00am",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "endTime": "11:00am",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "minimumDailyFrequency": "auto",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "maximumDailyFrequency": 1,
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "minimumWeeklyFrequency": 4,
+                    "constraintInformation": {
+                        "priorityLevel": 2,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "maximumWeeklyFrequency": 4,
+                    "constraintInformation": {
+                        "type": "hard"
+                    }
+                },
+                {
+                    "minimumDailyFrequency": "auto",
+                    "constraintInformation": {
+                        "priorityLevel": 2,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "divisionName":"CO1A",
+                    "constraintInformation": {
+                        "type": "hard"
+                    }  
+                },
+                {
+                    "continuousSlot": 1,
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                }
+            ],
+            "entity": {
+                "type": "subjectFacultyDivision",
+                "subjectName": "Subject 1",
+                "facultyName": "Faculty 1",
+                "divisionName": "CO1A"
+            },
+            "preset": [
+                {
+                    "day": {
+                        "priorityLevel": 1,
+                        "value": "MONDAY",
+                        "startTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "9:00am"
+                        },
+                        "endTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "10:00am"
+                        }
+                    }
+                },
+                {
+                    "day": {
+                        "priorityLevel": 1,
+                        "value": "WEDNESDAY",
+                        "startTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "10:00am"
+                        },
+                        "endTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "11:00am"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "dayName":"auto",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }                    
+                },
+                {
+                    "startTime": "09:00am",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "endTime": "11:00am",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "minimumDailyFrequency": "auto",
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "maximumDailyFrequency": 1,
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "minimumWeeklyFrequency": 4,
+                    "constraintInformation": {
+                        "priorityLevel": 2,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "maximumWeeklyFrequency": 4,
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "minimumDailyFrequency": "auto",
+                    "constraintInformation": {
+                        "priorityLevel": 2,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "continuousSlot": 1,
+                    "constraintInformation": {
+                        "priorityLevel": 1,
+                        "type": "soft"
+                    }
+                },
+                {
+                    "divisionName":"CO1A",
+                    "constraintInformation": {
+                        "type": "hard"
+                    }  
+                }
+            ],
+            "entity": {
+                "type": "break",
+                "name": "BREAK TIME"
+            },
+            "preset": [
+                {
+                    "day": {
+                        "priorityLevel": 1,
+                        "value": "TUESDAY",
+                        "startTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "9:00am"
+                        },
+                        "endTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "10:00am"
+                        }
+                    }
+                },
+                {
+                    "day": {
+                        "priorityLevel": 1,
+                        "value": "THURSDAY",
+                        "startTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "10:00am"
+                        },
+                        "endTime": {
+                            "constraintInformation": {
+                                "type": "hard"
+                            },
+                            "value": "11:00am"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
