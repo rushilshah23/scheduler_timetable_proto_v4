@@ -41,18 +41,37 @@ def get_new_id():
     return str(uuid.uuid4())
 
 
+from datetime import datetime, time
+
 def convert_str_to_time(time_str: str, time_format: str = "%I:%M %p") -> time:
     """
-    Converts a time string to a datetime object and returns it in 24-hour format.
+    Converts a time string to a time object and returns it in 24-hour format.
+    Handles time strings with or without seconds and adjusts formats accordingly.
     :param time_str: The time string to convert.
     :param time_format: The format to parse the time string (default: "%I:%M %p").
     :return: A time object.
     """
     try:
+        # Normalize the time string by removing seconds if present
+        if ":" in time_str and time_str.count(":") == 2:
+            time_str = ":".join(time_str.split(":")[:2])
+        
+        # Ensure consistency in AM/PM format
         time_str = time_str.upper().replace("AM", " AM").replace("PM", " PM").strip()
-        return datetime.strptime(time_str, time_format).time()
-    except ValueError as e:
-        raise ValueError(f"Invalid time string '{time_str}' with format '{time_format}': {e}")
+
+        # Handle common formats dynamically
+        possible_formats = [time_format, "%H:%M"]  # Add other formats if needed
+
+        for fmt in possible_formats:
+            try:
+                return datetime.strptime(time_str, fmt).time()
+            except ValueError:
+                continue
+        
+        # Raise an error if no format matches
+        raise ValueError(f"Time string '{time_str}' does not match any known formats.")
+    except Exception as e:
+        raise ValueError(f"Error processing time string '{time_str}': {e}")
 
 def convert_datetime_to_utc_datetime(local_time: datetime) -> datetime:
     """
