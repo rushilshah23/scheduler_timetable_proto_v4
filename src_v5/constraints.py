@@ -5,11 +5,11 @@ from collections import defaultdict
 from src_v5.domain.university import *
 
 
-# def get_next_slot(slot:'Slot', university_slots:List['Slot']):
-#     for university_slot in university_slots:
-#         if university_slot.slot_time.start_time == slot.slot_time.end_time and university_slot.working_day.id == slot.working_day.id and slot.division.id == university_slot.division.id:
-#             return university_slot
-#     return None   
+def get_next_slot(slot:'Slot', university_slots:List['Slot']):
+    for university_slot in university_slots:
+        if university_slot.slot_time.start_time == slot.slot_time.end_time and university_slot.working_day.id == slot.working_day.id and slot.division.id == university_slot.division.id:
+            return university_slot
+    return None   
 
 
 def get_next_slot(slot: 'Slot', university_slots: List['Slot']):
@@ -44,6 +44,7 @@ class NoSlotRepeatedSlotConstraint(Constraint):
         total_penalty = 0
         for slot in slots:
             if slot.id in seen:
+                slot.penalty+=1
                 total_penalty += 1
             seen.add(slot.id)
         return self.penalty * total_penalty
@@ -64,6 +65,7 @@ class NoFacultyOverlapConstraint(Constraint):
                 if slot.slot_alloted_to.allotable_entity is not None and next_slot.slot_alloted_to.allotable_entity is not None:
                     if slot.slot_alloted_to.allotable_entity.type == "TeachingEntity" and next_slot.slot_alloted_to.allotable_entity.type == "TeachingEntity":
                         if slot.slot_alloted_to.allotable_entity.faculty.id == next_slot.slot_alloted_to.allotable_entity.faculty.id:
+                            slot.penalty+=1
                             total_penalty+=1
         return self.penalty * total_penalty
 
@@ -84,6 +86,7 @@ class NoFacultyOverlapConstraint(Constraint):
 
 class ContinuousSlotConstraint(Constraint):
 
+    # VERSION 1
     # def apply_constraint(self, chromosome: Chromosome):
     #     total_penalty = 0
     #     university_slots:List[Slot] = chromosome.genes
@@ -106,6 +109,45 @@ class ContinuousSlotConstraint(Constraint):
                     
     #     return self.penalty * total_penalty
 
+    # VERSION 2
+    # def apply_constraint(self, chromosome: Chromosome):
+    #     total_penalty = 0
+    #     university_slots: List[Slot] = chromosome.genes
+
+    #     for slot in university_slots:
+    #         allotable = slot.slot_alloted_to
+
+    #         # Case 1: There is a next_slot_allotable
+    #         if allotable.next_slot_allotable is not None:
+    #             next_slot = get_next_slot(slot=slot, university_slots=university_slots)
+
+    #             # Penalize if next slot is invalid or doesn't match the sequence
+    #             if (
+    #                 next_slot is None
+    #                 or allotable.next_slot_allotable.id != next_slot.slot_alloted_to.id
+    #                 or allotable.continuous_left != next_slot.slot_alloted_to.continuous_left + 1
+    #             ):
+    #                 slot.penalty += allotable.continuous_left
+
+    #                 total_penalty += allotable.continuous_left
+
+    #         # Case 2: Last allotable in the sequence (no next_slot_allotable)
+    #         elif allotable.allotable_entity.continuous_slot > 1:
+    #             previous_slot = get_previous_slot(slot=slot, university_slots=university_slots)
+
+    #             # Penalize if no previous slot or sequence mismatch
+    #             if (
+    #                 previous_slot is None
+    #                 or previous_slot.slot_alloted_to.next_slot_allotable is None
+    #                 or previous_slot.slot_alloted_to.next_slot_allotable.id != allotable.id
+    #                 or allotable.continuous_left != previous_slot.slot_alloted_to.continuous_left - 1
+    #             ):
+    #                 slot.penalty += allotable.allotable_entity.continuous_slot - 1
+                    
+    #                 total_penalty += allotable.allotable_entity.continuous_slot - 1
+
+    #     return self.penalty * total_penalty
+
 
     def apply_constraint(self, chromosome: Chromosome):
         total_penalty = 0
@@ -124,6 +166,8 @@ class ContinuousSlotConstraint(Constraint):
                     or allotable.next_slot_allotable.id != next_slot.slot_alloted_to.id
                     or allotable.continuous_left != next_slot.slot_alloted_to.continuous_left + 1
                 ):
+                    slot.penalty += allotable.continuous_left
+
                     total_penalty += allotable.continuous_left
 
             # Case 2: Last allotable in the sequence (no next_slot_allotable)
@@ -137,9 +181,13 @@ class ContinuousSlotConstraint(Constraint):
                     or previous_slot.slot_alloted_to.next_slot_allotable.id != allotable.id
                     or allotable.continuous_left != previous_slot.slot_alloted_to.continuous_left - 1
                 ):
+                    slot.penalty += allotable.allotable_entity.continuous_slot - 1
+                    
                     total_penalty += allotable.allotable_entity.continuous_slot - 1
 
         return self.penalty * total_penalty
+
+
 
     def is_correct_next_continuous_slot(self,slot_allotable_1:SlotAllotable,slot_allotable_2:SlotAllotable):
         # if slot_allotable_2.allotable_entity.type !='TeachingEntity':
@@ -174,68 +222,57 @@ class ContinuousSlotConstraint(Constraint):
             valid_gene = self.is_correct_next_continuous_slot(slot.slot_alloted_to, new_gene.slot_alloted_to)
         return new_gene
 
+
+
     # def repair_chromosome(self, chromosome: Chromosome):
-    #     university_slots:List[Slot] = chromosome.genes
+    #     total_penalty = 0
+    #     university_slots: List[Slot] = chromosome.genes
 
     #     for slot in university_slots:
-    #         if slot.slot_alloted_to.next_slot_allotable:
+    #         allotable = slot.slot_alloted_to
+
+    #         # Case 1: There is a next_slot_allotable
+    #         if allotable.next_slot_allotable is not None:
     #             next_slot = get_next_slot(slot=slot, university_slots=university_slots)
-    #             if next_slot is None:
-    #                 new_gene = self._get_safe_allotable(slot=slot)
-    #                 slot.slot_alloted_to = new_gene.slot_alloted_to
-    #                 # pass
-    #             elif slot.slot_alloted_to.next_slot_allotable.id != next_slot.slot_alloted_to.id or slot.slot_alloted_to.continuous_left != next_slot.slot_alloted_to.continuous_left +1:
-    #                 valid_allotable =  self._get_next_correct_allotable(slot_allotable=slot.slot_alloted_to)
-    #                 if valid_allotable is None:
+
+    #             # Penalize if next slot is invalid or doesn't match the sequence
+    #             if (
+    #                 next_slot is None
+    #                 or allotable.next_slot_allotable.id != next_slot.slot_alloted_to.id
+    #                 or allotable.continuous_left != next_slot.slot_alloted_to.continuous_left + 1
+    #             ):
+    #                 if next_slot is None:
+    #                     allotable.next_slot_allotable = self._get_safe_allotable(slot=slot).slot_alloted_to
+    #                 else:
+    #                     next_slot_allotable = self._get_next_correct_allotable(slot_allotable=slot.slot_alloted_to)
+    #                     if next_slot_allotable is not None:
+    #                         allotable.next_slot_allotable = next_slot_allotable
+    #                     else:
+    #                         pass
+
+    #         # Case 2: Last allotable in the sequence (no next_slot_allotable)
+    #         elif allotable.allotable_entity.continuous_slot > 1:
+    #             previous_slot = get_previous_slot(slot=slot, university_slots=university_slots)
+
+    #             # Penalize if no previous slot or sequence mismatch
+    #             if (
+    #                 previous_slot is None
+    #                 or previous_slot.slot_alloted_to.next_slot_allotable is None
+    #                 or previous_slot.slot_alloted_to.next_slot_allotable.id != allotable.id
+    #                 or allotable.continuous_left != previous_slot.slot_alloted_to.continuous_left - 1
+    #             ):
+    #                 if previous_slot is None or previous_slot.slot_alloted_to.next_slot_allotable is None:
     #                     slot.slot_alloted_to = self._get_safe_allotable(slot=slot).slot_alloted_to
     #                 else:
-    #                     next_slot.slot_alloted_to =valid_allotable
-     
+    #                     slot.slot_alloted_to = self._get_safe_allotable(slot=slot).slot_alloted_to
+
     #     chromosome.genes = university_slots
 
     #     return chromosome
 
+
     def repair_chromosome(self, chromosome: Chromosome):
-        university_slots: List[Slot] = chromosome.genes
 
-        for slot in university_slots:
-            allotable = slot.slot_alloted_to
-
-            if allotable is None:
-                # Handle case where slot_alloted_to is None
-                slot.slot_alloted_to = self._get_safe_allotable(slot=slot).slot_alloted_to
-                continue
-
-            # Case 1: There is a next_slot_allotable
-            if allotable.next_slot_allotable is not None:
-                next_slot = get_next_slot(slot=slot, university_slots=university_slots)
-
-                if next_slot is None:
-                    # Repair by assigning a safe allotable
-                    # slot.slot_alloted_to = self._get_safe_allotable(slot=slot).slot_alloted_to
-                    pass
-                elif not self.is_correct_next_continuous_slot(allotable, next_slot.slot_alloted_to):
-                    # Try to repair the next slot
-                    valid_allotable = self._get_next_correct_allotable(slot_allotable=allotable)
-                    if valid_allotable is None:
-                        # Fallback to safe allotable if no valid next is found
-                        # slot.slot_alloted_to = self._get_safe_allotable(slot=slot).slot_alloted_to
-                        pass
-                    else:
-                        next_slot.slot_alloted_to = valid_allotable
-
-            # Case 2: Last allotable in the sequence (no next_slot_allotable)
-            elif allotable.allotable_entity.continuous_slot > 1:
-                previous_slot = get_previous_slot(slot=slot, university_slots=university_slots)
-
-                if previous_slot is None or not self.is_correct_next_continuous_slot(
-                    previous_slot.slot_alloted_to, allotable
-                ):
-                    # Repair by assigning a safe allotable
-                    # slot.slot_alloted_to = self._get_safe_allotable(slot=slot).slot_alloted_to
-                    pass
-
-        chromosome.genes = university_slots
         return chromosome
 
 
@@ -247,6 +284,7 @@ class AllAllotablesAssignedConstraint(Constraint):
         assigned_allotables = {slot.slot_alloted_to.id for slot in chromosome.genes}
         for allotable in self.generic.data_pool.allotables:
             if allotable.id not in assigned_allotables:
+                
                 total_penalty += 1
         
         return self.penalty * total_penalty
@@ -284,6 +322,7 @@ class AllotableCorrectDivision(Constraint):
         for slot in slots:
             if slot.slot_alloted_to.allotable_entity.type != 'EmptyEntity':
                 if slot.slot_alloted_to.allotable_entity.division.id != slot.division.id:
+                    slot.penalty+=1
                     total_penalty+=1
         return self.penalty * total_penalty
 
@@ -296,7 +335,7 @@ class AllotableCorrectDivision(Constraint):
                 return new_gene.slot_alloted_to
 
     def repair_chromosome(self, chromosome):
-        # slots:List[Slot] = chromosome.genes
+        slots:List[Slot] = chromosome.genes
 
         # for slot in slots:
         #     if slot.slot_alloted_to.allotable_entity.type != 'EmptyEntity':
@@ -305,7 +344,7 @@ class AllotableCorrectDivision(Constraint):
 
         # chromosome.genes = slots
         return chromosome
-# ---------------------------------------------
+# # ---------------------------------------------
 
 
    

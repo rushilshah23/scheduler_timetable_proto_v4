@@ -11,7 +11,9 @@ class DataPool:
 
 @dataclass
 class Gene:
-    penalty:float = 1.0
+
+    def __post_init__(self):
+        self.penalty = 1.0
 
     def to_dict(self):
         return {

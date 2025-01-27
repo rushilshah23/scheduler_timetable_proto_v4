@@ -51,6 +51,62 @@ class UniversityTimetablerGeneticAlgorithmMachine(GeneticAlgorithmMachine):
         return Chromosome(genes=child_slots)
 
 
+    # def crossover(self, parent_1: Chromosome, parent_2: Chromosome) -> Chromosome:
+    #     parent_1_div_slots = self._group_by_division(parent_1.genes)
+    #     parent_2_div_slots = self._group_by_division(parent_2.genes)
+
+    #     child_slots = []
+    #     mutation_rate = 0.1  # Chance of mutation to introduce randomness
+    #     elitism_rate = 0.1   # Fraction of best slots directly inherited
+
+    #     common_divisions = set(parent_1_div_slots.keys()).intersection(parent_2_div_slots.keys())
+
+    #     for div_id in common_divisions:
+    #         slots_1 = parent_1_div_slots[div_id]
+    #         slots_2 = parent_2_div_slots[div_id]
+
+    #         if len(slots_1) != len(slots_2):
+    #             raise ValueError(f"Mismatch in slot counts for division {div_id}")
+
+    #         for slot_1, slot_2 in zip(slots_1, slots_2):
+    #             # Create a new slot as a deep copy of slot_1
+    #             new_slot = copy.deepcopy(slot_1)
+
+    #             # Calculate probabilities for selection based on penalties
+    #             total_penalty = slot_1.penalty + slot_2.penalty
+    #             if total_penalty > 0:
+    #                 prob_slot_1 = (1 - slot_1.penalty / total_penalty)
+    #                 prob_slot_2 = (1 - slot_2.penalty / total_penalty)
+    #             else:
+    #                 prob_slot_1 = 0.5
+    #                 prob_slot_2 = 0.5
+
+    #             # Select based on probabilities, favoring lower penalty slots
+    #             if random.random() < prob_slot_2:
+    #                 new_slot.slot_alloted_to = slot_2.slot_alloted_to
+
+    #             # Introduce mutation to explore new possibilities
+    #             if random.random() < mutation_rate:
+    #                 new_slot.slot_alloted_to = self.generics.gene_generator(mutation_mode=True).slot_alloted_to
+
+    #             # Append to the child slots
+    #             child_slots.append(new_slot)
+
+    #     # Add elitism: Preserve a fraction of the best slots from parents
+    #     parent_slots = parent_1.genes + parent_2.genes
+    #     best_slots = sorted(parent_slots, key=lambda slot: slot.penalty)[:int(len(parent_slots) * elitism_rate)]
+    #     child_slots.extend(copy.deepcopy(best_slots))
+
+    #     # Ensure unique slots in child (if applicable to your problem domain)
+    #     child_slots = list({slot.id: slot for slot in child_slots}.values())
+
+    #     return Chromosome(genes=child_slots)
+
+
+
+
+
+
 
 @dataclass
 class TimetableGenerics(GeneticAlgorithmFunctionalities):
@@ -180,17 +236,24 @@ def create_chromosome(slots:List[Slot]=None, allotables:List[SlotAllotable]=None
         constraints=[
             NoSlotRepeatedSlotConstraint(1,type='HARD', generic=generics ),
             NoFacultyOverlapConstraint(1,type='HARD', generic=generics ),
-            ContinuousSlotConstraint(1,type='HARD', generic=generics ),
+            # ContinuousSlotConstraint(1,type='HARD', generic=generics ),
             AllAllotablesAssignedConstraint(1,type='HARD', generic=generics ),
             NoAllotableRepetitionConstraint(1,type='HARD', generic=generics ),
             AllotableCorrectDivision(1,type='HARD', generic=generics ),
-
         ]
+        # constraints=[
+        #     NoSlotRepeatedConstraint(1,type='HARD', generic=generics ),
+        #     NoFacultyOverlapConstraint(1,type='HARD', generic=generics ),
+        #     ContinuousSlotConstraint(1,type='HARD', generic=generics ),
+        #     AllAllotablesAssignedConstraint(1,type='HARD', generic=generics ),
+        #     NoAllotableRepetitionConstraint(1,type='HARD', generic=generics ),
+        #     # AllotableCorrectDivision(1,type='HARD', generic=generics ),
+        # ]
     )
 
     ga_config = GeneticAlgorithmConfig(
         MAX_GENERATION=2000,
-        DNA_SIZE=1000,
+        DNA_SIZE=500,
         MUTATION_RATE=0.08,
         REPAIR_MODE=True
     )
