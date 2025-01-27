@@ -12,9 +12,9 @@ class DataPool:
 @dataclass
 class Gene:
     pass
-
     def to_dict(self):
         return super().to_dict()
+
 
 @dataclass
 class Chromosome:
