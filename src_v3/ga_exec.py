@@ -1,12 +1,12 @@
 from dataclasses import dataclass
 from typing import List, Dict, Union, Literal
-from src_v2.ga import *
-from src_v2.domain import *
+from src_v3.ga import *
+from src_v3.domain import *
 import random
 import copy
-from src_v2.utils.generic_utils import timer
-from src_v2.utils.generic_utils import get_new_id
-from src_v2.utils.business_utils import *
+from src_v3.utils.generic_utils import timer
+from src_v3.utils.generic_utils import get_new_id
+from src_v3.utils.business_utils import *
 
 @dataclass
 class SlotData:
@@ -47,49 +47,57 @@ def allotable_generator():
     pass
 
 def allotables_generator(parsed_data):
-    final_allotables : List[SlotAllotable] = []
+    allotables : List[SlotAllotable] = []
 
     for allotable in parsed_data['slot_allotables']:
 
 
-        weekly_allotables = []
-
-
+        slot_allotable = SlotAllotable(
+            allotable_entity=allotable["allotable_entity"],
+            allotable_entity_id=allotable["allotable_entity_id"],
+            start_time_rule=allotable['start_time_rule'],
+            end_time_rule=allotable['end_time_rule'],
+            continuous_slot_rule=allotable['continuous_slot_rule'],
+            division= allotable['division'],
+            division_id=allotable['division_id'],
+            id=get_new_id(),
+            maximum_daily_frequency_rule=allotable['maximum_daily_frequency_rule'],
+            maximum_weekly_frequency_rule=allotable['maximum_weekly_frequency_rule'],
+            minimum_daily_frequency_rule=allotable['minimum_daily_frequency_rule'],
+            minimum_weekly_frequency_rule=allotable['minimum_weekly_frequency_rule'],
+            next_slot_allotable=None,
+            next_slot_allotable_id=None,
+            working_day=allotable['working_day'],
+            working_day_id=allotable['working_day_id'],
+            working_day_rule=allotable['working_day_rule'],
+        )
         max_weekly_count = int(allotable['maximum_weekly_frequency_rule']['max_weekly_frequency'])
-        continuous_slot = int(allotable['continuous_slot_rule']['continuous_slot'])
-
-
-        allotable_generated_count = 0
+        continuous_slot = int(allotable['continuous_slot_rule'][''])
+        current_slot_allotable = slot_allotable
+        allotable_generated_count = 1
         while allotable_generated_count < max_weekly_count:
-            slot_allotable = SlotAllotable(
-                allotable_entity=allotable["allotable_entity"],
-                allotable_entity_id=allotable["allotable_entity_id"],
-                start_time_rule=allotable['start_time_rule'],
-                end_time_rule=allotable['end_time_rule'],
-                continuous_slot_rule=allotable['continuous_slot_rule'],
-                division= allotable['division'],
-                division_id=allotable['division_id'],
-                id=get_new_id(),
-                maximum_daily_frequency_rule=allotable['maximum_daily_frequency_rule'],
-                maximum_weekly_frequency_rule=allotable['maximum_weekly_frequency_rule'],
-                minimum_daily_frequency_rule=allotable['minimum_daily_frequency_rule'],
-                minimum_weekly_frequency_rule=allotable['minimum_weekly_frequency_rule'],
-                next_slot_allotable=None,
-                next_slot_allotable_id=None,
-                working_day=allotable['working_day'],
-                working_day_id=allotable['working_day_id'],
-                working_day_rule=allotable['working_day_rule'], 
-            )
-            weekly_allotables.append(slot_allotable)
-            allotable_generated_count+=1
+            next_slot_allotable = SlotAllotable(
+            allotable_entity=allotable["allotable_entity"],
+            allotable_entity_id=allotable["allotable_entity_id"],
+            start_time_rule=allotable['start_time_rule'],
+            end_time_rule=allotable['end_time_rule'],
+            continuous_slot_rule=allotable['continuous_slot_rule'],
+            division= allotable['division'],
+            division_id=allotable['division_id'],
+            id=get_new_id(),
+            maximum_daily_frequency_rule=allotable['maximum_daily_frequency_rule'],
+            maximum_weekly_frequency_rule=allotable['maximum_weekly_frequency_rule'],
+            minimum_daily_frequency_rule=allotable['minimum_daily_frequency_rule'],
+            minimum_weekly_frequency_rule=allotable['minimum_weekly_frequency_rule'],
+            next_slot_allotable=None,
+            next_slot_allotable_id=None,
+            working_day=allotable['working_day'],
+            working_day_id=allotable['working_day_id'],
+            working_day_rule=allotable['working_day_rule'],
+        )
 
+            # CONTINUE FROM HERE 
 
-        if len(weekly_allotables)%continuous_slot != 0 :
-            raise Exception(f"Weekly allowed allotables is {max_weekly_count} but continuous slots are {continuous_slot} which fails")
-
-        start_sequential_slot = continuous_slot
-        last_sequential_slot = continuous_slot
-        for weekly_allotable in range(len()):
 
 
 

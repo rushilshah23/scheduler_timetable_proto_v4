@@ -1,0 +1,641 @@
+{
+    "university": {
+        "id": "sakec",
+        "name": "sakec",
+        "logo": "some path",
+        "defaults": {
+            "slot_duration": 3600,
+            "available_slot_space": [
+                {
+                    "day": "monday",
+                    "start_time": "09:00am",
+                    "end_time": "05:00pm"
+                },
+                {
+                    "day": "tuesday",
+                    "start_time": "09:00am",
+                    "end_time": "05:00pm"
+                },
+                {
+                    "day": "wednesday",
+                    "start_time": "09:00am",
+                    "end_time": "05:00pm"
+                },
+                {
+                    "day": "thursday",
+                    "start_time": "09:00am",
+                    "end_time": "05:00pm"
+                },
+                {
+                    "day": "friday",
+                    "start_time": "09:00am",
+                    "end_time": "05:00pm"
+                }
+            ]
+        }
+    },
+    "divisions": [
+        {
+            "id": "DIV1",
+            "name": "DIV1",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DIV2",
+            "name": "DIV2",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        }
+    ],
+    "subjects": [
+        {
+            "id": "SUB1",
+            "name": "SUB1"
+        },
+        {
+            "id": "SUB2",
+            "name": "SUB2"
+        },
+        {
+            "id": "SUB3",
+            "name": "SUB3"
+        },
+        {
+            "id": "SUB4",
+            "name": "SUB4"
+        },
+        {
+            "id": "SUB5",
+            "name": "SUB5"
+        },
+        {
+            "id": "SUB6",
+            "name": "SUB6"
+        },
+        {
+            "id": "SUB7",
+            "name": "SUB7"
+        },
+        {
+            "id": "SUB8",
+            "name": "SUB8"
+        },
+        {
+            "id": "SUB9",
+            "name": "SUB9"
+        },
+        {
+            "id": "SUB10",
+            "name": "SUB10"
+        }
+    ],
+    "faculties": [
+        {
+            "id": "FAC1",
+            "name": "FAC1",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC2",
+            "name": "FAC2",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC3",
+            "name": "FAC3",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC4",
+            "name": "FAC4",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC5",
+            "name": "FAC5",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC6",
+            "name": "FAC6",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC7",
+            "name": "FAC7",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC8",
+            "name": "FAC8",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC9",
+            "name": "FAC9",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FAC10",
+            "name": "FAC10",
+            "defaults": {
+                "available_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "09:00am",
+                        "end_time": "05:00pm"
+                    }
+                ]
+            }
+        }
+    ],
+    "entities": [
+        {
+            "id": "ENT1",
+            "type": "DFS",
+            "data": {
+                "faculty_id": "FAC1",
+                "dviision_id": "DIV1",
+                "subject_id": "SUB1"
+            },
+            "min_daily_frequency": 2,
+            "max_daily_frequency": "auto",
+            "min_weekly_frequency": "auto",
+            "max_weekly_frequency": 10,
+            "continuous_slots": 2
+        },
+        {
+            "id": "ENT2",
+            "type": "DFS",
+            "data": {
+                "faculty_id": "FAC2",
+                "dviision_id": "DIV2",
+                "subject_id": "SUB2"
+            },
+            "min_daily_frequency": 1,
+            "max_daily_frequency": "auto",
+            "min_weekly_frequency": "auto",
+            "max_weekly_frequency": 5,
+            "continuous_slots": 1
+        },
+        {
+            "id": "ENT3",
+            "type": "DFS",
+            "data": {
+                "faculty_id": "FAC3",
+                "dviision_id": "DIV1",
+                "subject_id": "SUB3"
+            },
+            "min_daily_frequency": "auto",
+            "max_daily_frequency": "auto",
+            "min_weekly_frequency": "auto",
+            "max_weekly_frequency": 4,
+            "continuous_slots": 1
+        },
+        {
+            "id": "ENT4",
+            "type": "DFS",
+            "data": {
+                "faculty_id": "FAC2",
+                "dviision_id": "DIV2",
+                "subject_id": "SUB1"
+            },
+            "min_daily_frequency": 2,
+            "max_daily_frequency": "auto",
+            "min_weekly_frequency": "auto",
+            "max_weekly_frequency": 10,
+            "continuous_slots": 2
+        },
+        {
+            "id": "ENT5",
+            "type": "BREAK",
+            "data": {
+                "name": "LUNCH BREAK DIV 1",
+                "dviision_id": "DIV1"
+            },
+            "min_daily_frequency": 1,
+            "max_daily_frequency": "auto",
+            "min_weekly_frequency": "auto",
+            "max_weekly_frequency": 5,
+            "continuous_slots": 1
+        },
+        {
+            "id": "ENT6",
+            "type": "BREAK",
+            "data": {
+                "name": "LUNCH BREAK DIV 2",
+                "dviision_id": "DIV2"
+            },
+            "min_daily_frequency": 1,
+            "max_daily_frequency": "auto",
+            "min_weekly_frequency": "auto",
+            "max_weekly_frequency": 5,
+            "continuous_slots": 1
+        }
+    ],
+    "allotables": [
+        {
+            "entity_id":"ENT1",
+            "defaults": {
+                "fixed_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "09:00am",
+                        "end_time": "11:00am"
+                    }
+                ]
+            }
+        },
+        {
+            "entity_id":"ENT5",
+            "defaults": {
+                "fixed_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    }
+                ]
+            }
+        },
+        {
+            "entity_id":"ENT6",
+            "defaults": {
+                "fixed_slot_space": [
+                    {
+                        "day": "monday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "tuesday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "wednesday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "thursday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    },
+                    {
+                        "day": "friday",
+                        "start_time": "01:00pm",
+                        "end_time": "02:00pm"
+                    }
+                ]
+            }
+        }
+    ]
+}
