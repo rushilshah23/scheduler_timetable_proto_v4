@@ -11,10 +11,13 @@ class DataPool:
 
 @dataclass
 class Gene:
-    pass
+    penalty:float = 1.0
 
     def to_dict(self):
-        return super().to_dict()
+        # return super().to_dict(
+        return {
+            "penalty":self.penalty
+        }
 
 @dataclass
 class Chromosome:
