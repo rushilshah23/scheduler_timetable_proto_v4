@@ -72,12 +72,15 @@ def create_slot_allotables_for_entities(entities: List['Entity']) -> List['SlotA
                     next_slot_allotable=None,  # Always None initially
                     working_day='auto',       # Replace 'auto' with computed value if needed
                     working_hours='auto',     # Replace 'auto' with computed value if needed
-                    continuous_left=entity.continuous_slot - i - 1  # Remaining slots in the sequence
+                    continuous_left=entity.continuous_slot - i - 1,  # Remaining slots in the sequence
+                    previous_slot_allotable= None
                 )
 
                 # Link the previous SlotAllotable to the current one
                 if current_slot_allotable is not None:
+                  
                     current_slot_allotable.next_slot_allotable = slot_allotable
+
 
                 current_slot_allotable = slot_allotable
                 slot_allotables.append(current_slot_allotable)
@@ -336,6 +339,7 @@ class SlotAllotable:
     allotable_entity:Union[TeachingEntity | NonTeachingEntity | EmptyEntity]
     next_slot_allotable:'SlotAllotable'
     continuous_left:int
+    previous_slot_allotable:'SlotAllotable'
     working_day:Union[WorkingDay,Literal['auto']]= 'auto'
     working_hours:Union[WorkingHours,Literal['auto']] ='auto'
 
@@ -345,7 +349,8 @@ class SlotAllotable:
             "next_slot_allotable":self.next_slot_allotable.to_dict() if self.next_slot_allotable else self.next_slot_allotable,
             "working_day":self.working_day.to_dict() if self.working_day != 'auto' else self.working_day,
             "working_hours":self.working_hours.to_dict() if self.working_hours != 'auto' else self.working_hours,
-            "continuous_left":self.continuous_left
+            "continuous_left":self.continuous_left,
+            "is_linked":self.previous_slot_allotable.to_dict() if self.previous_slot_allotable else self.previous_slot_allotable,
 
         }
     

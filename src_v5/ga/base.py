@@ -113,7 +113,7 @@ class GeneticAlgorithmMachine():
             new_chromosome = self.fitness_evaluator.repair_chromosome(new_chromosome)
             new_chromosome.fitness = self.fitness_evaluator.evaluate_fitness(new_chromosome, only_hard_mode=True)
             # print(f"Total initial fitness = {new_chromosome.fitness}")
-            if new_chromosome.fitness >= self.fitness_evaluator.max_score* 0.9:
+            if new_chromosome.fitness >= self.fitness_evaluator.max_score* 0.8:
                 count+=1
                 print(f"Chromosome generated - {count}\t Fitness = {new_chromosome.fitness}")
                 # print("FItness  - ",new_chromosome.fitness)
@@ -221,8 +221,8 @@ class GeneticAlgorithmMachine():
 
                 child.fitness = self.fitness_evaluator.evaluate_fitness(child)
                 self.population.chromosomes.sort(key=lambda chromosome:chromosome.fitness, reverse=True)
-                if child.fitness >= self.population.chromosomes[-1].fitness:
-                    self.population.chromosomes[-1] = child
+                # if child.fitness >= self.population.chromosomes[-1].fitness:
+                self.population.chromosomes[-1] = child
                 self.population.chromosomes.sort(key=lambda chromosome:chromosome.fitness, reverse=True)
 
                 generation_count+=1

@@ -44,7 +44,7 @@ class UniversityTimetablerGeneticAlgorithmMachine(GeneticAlgorithmMachine):
 
             for slot_1, slot_2 in zip(slots_1, slots_2):
                 new_slot = copy.deepcopy(slot_1)
-                if random.random() > 0.5:
+                if random.random() > 0.7:
                     new_slot.slot_alloted_to = slot_2.slot_alloted_to
                 child_slots.append(new_slot)
 
@@ -236,10 +236,10 @@ def create_chromosome(slots:List[Slot]=None, allotables:List[SlotAllotable]=None
         constraints=[
             NoSlotRepeatedSlotConstraint(1,type='HARD', generic=generics ),
             NoFacultyOverlapConstraint(1,type='HARD', generic=generics ),
-            # ContinuousSlotConstraint(1,type='HARD', generic=generics ),
+            # ContinuousSlotConstraint(3,type='HARD', generic=generics ),
             AllAllotablesAssignedConstraint(1,type='HARD', generic=generics ),
             NoAllotableRepetitionConstraint(1,type='HARD', generic=generics ),
-            AllotableCorrectDivision(1,type='HARD', generic=generics ),
+            AllotableCorrectDivision(5,type='HARD', generic=generics ),
         ]
         # constraints=[
         #     NoSlotRepeatedConstraint(1,type='HARD', generic=generics ),
@@ -252,10 +252,10 @@ def create_chromosome(slots:List[Slot]=None, allotables:List[SlotAllotable]=None
     )
 
     ga_config = GeneticAlgorithmConfig(
-        MAX_GENERATION=2000,
-        DNA_SIZE=500,
+        MAX_GENERATION=500,
+        DNA_SIZE=50,
         MUTATION_RATE=0.08,
-        REPAIR_MODE=True
+        REPAIR_MODE=False
     )
 
     # timetable_generator = GeneticAlgorithmMachine(
@@ -281,6 +281,10 @@ def create_chromosome(slots:List[Slot]=None, allotables:List[SlotAllotable]=None
         if current_score == fitness_evaluator.max_score:
             chromosome = temp_semi_chromosome
             return chromosome
+
+
+        chromosome = temp_semi_chromosome
+        return chromosome
     #     counter+=1
     #     semi_chromosome = temp_semi_chromosome
     # return semi_chromosome
@@ -300,7 +304,7 @@ def generate_timetable(parsed_data):
     if len(data_pool.allotables) < len(data_pool.slots):
         for i in range((len(data_pool.slots) - len(data_pool.allotables))): 
             empty_entity = EmptyEntity(id=get_new_id(), continuous_slot=1, maximum_weekly_frequency=1)
-            new_slot_allotable = SlotAllotable(id=get_new_id(), allotable_entity=empty_entity,next_slot_allotable=None, continuous_left=1)
+            new_slot_allotable = SlotAllotable(id=get_new_id(), allotable_entity=empty_entity,next_slot_allotable=None, continuous_left=1, previous_slot_allotable=None)
             data_pool.allotables.append(new_slot_allotable)
 
     final_chromosome = create_chromosome(slots=data_pool.slots, allotables=data_pool.allotables, data_pool=data_pool)
